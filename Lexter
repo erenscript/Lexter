@@ -1,0 +1,51 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Lexer = Instance.new("TextLabel")
+local JJ = Instance.new("TextButton")
+local GJ = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(84, 12, 90)
+Frame.Position = UDim2.new(0.609013379, 0, 0.605802059, 0)
+Frame.Size = UDim2.new(0, 305, 0, 206
+main.Active = true
+main.Draggable = true
+
+Lexer.Name = "Lexer"
+Lexer.Parent = Frame
+Lexer.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Lexer.Size = UDim2.new(0, 305, 0, 41)
+Lexer.Font = Enum.Font.Michroma
+Lexer.Text = "Lexer"
+Lexer.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lexer.TextSize = 19.000
+
+JJ.Name = "JJ"
+JJ.Parent = Frame
+JJ.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+JJ.Position = UDim2.new(0.222950816, 0, 0.242718458, 0)
+JJ.Size = UDim2.new(0, 157, 0, 50)
+JJ.Font = Enum.Font.Michroma
+JJ.Text = "JJ"
+JJ.TextColor3 = Color3.fromRGB(0, 0, 0)
+JJ.TextSize = 20.000
+JJ.MouseButton1Down:Connect(function()
+
+GJ.Name = "GJ"
+GJ.Parent = Frame
+GJ.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+GJ.Position = UDim2.new(0.222950816, 0, 0.606796086, 0)
+GJ.Size = UDim2.new(0, 157, 0, 50)
+GJ.Font = Enum.Font.Michroma
+GJ.Text = "GJ"
+GJ.TextColor3 = Color3.fromRGB(0, 0, 0)
+GJ.TextSize = 20.000
